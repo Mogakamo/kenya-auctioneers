@@ -1,15 +1,16 @@
+import PrimaryLayout from "@/components/layout/PrimaryLayout";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <PrimaryLayout className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Kenya Auctioneers</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </div>
+    </PrimaryLayout>
   );
 };
 
