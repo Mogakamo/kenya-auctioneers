@@ -10,7 +10,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({children}) => {
   return (
     <div>
         <TopNav />
-        {children}
+        <main className="mx-20">{children}</main>
         <Footer />
     </div>
   )
