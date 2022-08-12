@@ -2,7 +2,13 @@ import React from 'react'
 
 const TopNav = () => {
   return (
-    <div>TopNav</div>
+    <div className='h-12 shadow-md flex items-center'>
+        <div className="mx-20">
+            {/* Logo */}
+            <div>Kenyan Auctioneers</div>
+        </div>
+        
+    </div>
   )
 }
 
