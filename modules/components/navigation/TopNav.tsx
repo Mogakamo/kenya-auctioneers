@@ -7,11 +7,12 @@ const TopNav = () => {
       <div className="mx-20 flex items-center justify-between">
         {/* Logo */}
         <div>Kenyan Auctioneers</div>
-        <div>
+        <div className="flex items-center border-gray-400 border-2 h-10 w-96 px-3 space-x-3">
+            <SearchIcon className="h-6 w-6" />
           <input
             type="text"
             placeholder="Search for an auction"
-            className="border-gray-400 border-2 h-10 w-96"
+            className=""
           />
         </div>
         <div className="flex space-x-6 items-center">
