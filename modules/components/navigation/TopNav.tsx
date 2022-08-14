@@ -1,5 +1,6 @@
 import React from "react";
 import { SearchIcon, FilterIcon, StarIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const TopNav = () => {
   return (
@@ -22,7 +23,7 @@ const TopNav = () => {
           </div>
           <div>
             <button className="px-4 py-2 border-2 border-black rounded-lg">
-              Sign in
+              <Link href="/login">Sign in</Link>
             </button>
           </div>
           <div>
