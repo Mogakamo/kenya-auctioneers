@@ -1,20 +1,19 @@
 import React from "react";
 import { SearchIcon, FilterIcon, StarIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 const TopNav = () => {
   return (
     <div className="h-auto shadow-md p-5 sticky top-0 z-10 bg-white">
       <div className="mx-20 flex items-center justify-between">
         {/* Logo */}
-        <div>Kenyan Auctioneers</div>
+        <div className="relative h-12 w-48">
+          <Image src="/logo.jpeg" layout="fill" objectFit="contain" />
+        </div>
         <div className="flex items-center border-gray-400 border-2 h-10 w-96 px-3 space-x-3">
-            <SearchIcon className="h-6 w-6" />
-          <input
-            type="text"
-            placeholder="Search for an auction"
-            className=""
-          />
+          <SearchIcon className="h-6 w-6" />
+          <input type="text" placeholder="Search for an auction" className="" />
         </div>
         <div className="flex space-x-6 items-center">
           <div className="flex space-x-3">
