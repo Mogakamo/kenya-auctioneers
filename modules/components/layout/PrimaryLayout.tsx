@@ -10,7 +10,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({children}) => {
   return (
     <div className='h-screen'>
         <TopNav />
-        <main className="">{children}</main>
+        <main className="overflow-y">{children}</main>
         <Footer />
     </div>
   )

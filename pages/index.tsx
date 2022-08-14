@@ -1,7 +1,8 @@
+import Hero from "@/components/landing/Hero";
+import Products from "@/components/landing/Products";
 import PrimaryLayout from "@/components/layout/PrimaryLayout";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,8 @@ const Home: NextPage = () => {
         <title>Kenya Auctioneers</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      fjsldkf
+      <Hero />
+      <Products />
     </PrimaryLayout>
   );
 };

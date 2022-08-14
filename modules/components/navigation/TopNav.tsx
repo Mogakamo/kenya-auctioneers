@@ -3,7 +3,7 @@ import { SearchIcon, FilterIcon, StarIcon } from "@heroicons/react/outline";
 
 const TopNav = () => {
   return (
-    <div className="h-auto shadow-md p-5 sticky top-0">
+    <div className="h-auto shadow-md p-5 sticky top-0 z-10">
       <div className="mx-20 flex items-center justify-between">
         {/* Logo */}
         <div>Kenyan Auctioneers</div>
