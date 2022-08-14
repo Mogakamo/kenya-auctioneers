@@ -8,26 +8,26 @@ const Hero = () => {
           Find things you want. Only on Kenyan Auctioneers
         </h1>
       </div>
-      <div className="absolute inset-64">
+      <div className="absolute inset-56">
         <div className="flex space-x-24">
           <div className="flex items-center flex-col space-y-3 justify-center">
-            <div className="rounded-full border-2 h-24 w-24"></div>
+            <div className="rounded-full border-2 h-28 w-28"></div>
             <h1>Vehicles</h1>
           </div>
           <div className="flex items-center flex-col space-y-3 justify-center">
-            <div className="rounded-full border-2 h-24 w-24"></div>
+            <div className="rounded-full border-2 h-28 w-28"></div>
             <h1>Machinery</h1>
           </div>
           <div className="flex items-center flex-col space-y-3 justify-center">
-            <div className="rounded-full border-2 h-24 w-24"></div>
+            <div className="rounded-full border-2 h-28 w-28"></div>
             <h1>Apartments</h1>
           </div>
           <div className="flex items-center flex-col space-y-3 justify-center">
-            <div className="rounded-full border-2 h-24 w-24"></div>
+            <div className="rounded-full border-2 h-28 w-28"></div>
             <h1>Land</h1>
           </div>
           <div className="flex items-center flex-col space-y-3 justify-center">
-            <div className="rounded-full border-2 h-24 w-24"></div>
+            <div className="rounded-full border-2 h-28 w-28"></div>
             <h1>Livestock</h1>
           </div>
         </div>
