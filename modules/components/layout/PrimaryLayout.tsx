@@ -8,9 +8,9 @@ interface IPrimaryLayout {
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({children}) => {
   return (
-    <div>
+    <div className='h-screen'>
         <TopNav />
-        <main className="mx-20">{children}</main>
+        <main className="">{children}</main>
         <Footer />
     </div>
   )
