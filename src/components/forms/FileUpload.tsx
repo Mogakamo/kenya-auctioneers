@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { Controller, useController, useFormContext } from "react-hook-form";
 import useStore from "../../store"; // <--- import useStore hook
-import Spinner from "../Reusables/Spinner";
+import Spinner from "../Reusables/Loaders/Spinner";
 
 const CLOUDINARY_UPLOAD_PRESET = "salems-system";
 const CLOUDINARY_URL =
