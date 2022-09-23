@@ -28,8 +28,8 @@ const FileUpLoader: React.FC<FileUpLoaderProps> = ({ name }) => {
       const newFile = Object.values(target.files).map((file: File) => file);
 
       const formData = new FormData();
-      
-      formData.append("file", newFile[0]);
+
+      formData.append("file", newFile[0]!);
       formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
 
       store.setUploadingImage(true);
