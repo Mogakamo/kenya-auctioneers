@@ -1,11 +1,24 @@
-import create from "zustand"
+import create from "zustand";
 import { IUser } from "../lib/types";
 
 type Store = {
-    authUser: IUser | null;
-    uploadedImage: boolean
-    pageLoading: boolean
-    setAuthUser: (user: IUser | null) => void;
-    setUploadedImage: (isUploading: boolean) => void;
-    setPageLoading: (isLoading: boolean) => void;
-}
+  authUser: IUser | null;
+  uploadingImage: boolean;
+  pageLoading: boolean;
+  setAuthUser: (user: IUser | null) => void;
+  setUploadingImage: (isUploading: boolean) => void;
+  setPageLoading: (isLoading: boolean) => void;
+};
+
+const useStore = create<Store>((set) => ({
+  authUser: null,
+  uploadingImage: false,
+  pageLoading: false,
+  setAuthUser: (user) => set({ authUser: user }),
+  setUploadingImage: (isUploading) =>
+    set((state) => ({ ...state, uploadingImage: isUploading })),
+  setPageLoading: (isLoading) =>
+    set((state) => ({ ...state, pageLoading: isLoading })),
+}));
+
+export default useStore;
