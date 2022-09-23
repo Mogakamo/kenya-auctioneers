@@ -11,7 +11,7 @@ export default function AuthLayout({
         <title>Kenyan Auctioneers | Auth</title>
       </Head>
 
-      <main className="flex flex-col items-center justify-center p-10 container bg-white rounded-lg shadow-xl w-auto text-center">
+      <main className="flex flex-col items-center justify-center px-10 py-5 h-auto container bg-white rounded-lg shadow-xl w-auto text-center">
         {children}
       </main>
 
