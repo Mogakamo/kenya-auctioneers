@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "category": "Vehicles",
+    "details": {
+      "price": 100000,
+      "brand": "Audi",
+      "model": "X4",
+      "mileage": 12000,
+      "year": 2019,
+      "image": "https://www.audi.com/content/dam/gbp2/experience-audi/vehicles/q3/2019/overview/19_q3_01.jpg?imwidth=1920",
+      "location": {
+        "city": "Nairobi",
+        "country": "Kenya"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "category": "machinery"
+  },
+  {
+    "id": 3,
+    "category": "land",
+    "details": {
+      "price": 100000,
+      "size": 1000,
+      "image": "https://www.audi.com/content/dam/gbp2/experience-audi/vehicles/q3/2019/overview/19_q3_01.jpg?imwidth=1920",
+      "location": {
+        "city": "Nairobi",
+        "country": "Kenya"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "category": "livestock"
+  },
+  {
+    "id": 5,
+    "category": "apartments"	
+  }
+]

@@ -22,7 +22,7 @@ export const BidderRouter = createRouter()
             name,
             email,
             photo,
-            password: hashedPassword,
+            password,
           },
         });
 
