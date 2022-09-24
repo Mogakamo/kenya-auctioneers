@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { NavBar } from "../components";
+import { Hero } from "../components/Landing";
 import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -8,10 +9,10 @@ const Home: NextPage = () => {
 
   return (
     <div className="">
-      <NavBar/>
+      <NavBar />
+      <Hero />
     </div>
   );
 };
 
 export default Home;
-

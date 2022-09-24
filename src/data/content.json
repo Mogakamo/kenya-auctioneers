@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
-    "category": "Vehicles",
+
     "details": {
       "price": 100000,
+      "category": "Vehicles",
       "brand": "Audi",
       "model": "X4",
       "mileage": 12000,
@@ -17,13 +18,13 @@
   },
   {
     "id": 2,
-    "category": "machinery"
+    "details": { "category": "machinery" }
   },
   {
     "id": 3,
-    "category": "land",
     "details": {
       "price": 100000,
+      "category": "land",
       "size": 1000,
       "image": "https://www.audi.com/content/dam/gbp2/experience-audi/vehicles/q3/2019/overview/19_q3_01.jpg?imwidth=1920",
       "location": {
@@ -34,10 +35,10 @@
   },
   {
     "id": 4,
-    "category": "livestock"
+    "details": { "category": "livestock" }
   },
   {
     "id": 5,
-    "category": "apartments"	
+    "details": { "category": "apartments" }
   }
 ]
