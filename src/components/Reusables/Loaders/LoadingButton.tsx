@@ -9,7 +9,7 @@ type LoadingProps = {
 
 export default function Loading({
   loading,
-  btnColor = "bg-yellow-400",
+  btnColor = "bg-green-400",
   textColor = "text-white",
   children,
 }: LoadingProps) {

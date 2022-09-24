@@ -14,7 +14,7 @@ model Example {
     id String @id @default(cuid())
 }
 
-model User {
+model Bidder {
     id String @id @default(cuid())
     name String
     email String @unique
@@ -22,5 +22,5 @@ model User {
     photo String
     
 
-    @@map("users")
+    @@map("bidders")
 }

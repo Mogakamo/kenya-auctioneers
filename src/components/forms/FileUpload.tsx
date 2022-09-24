@@ -61,11 +61,12 @@ const FileUpLoader: React.FC<FileUpLoaderProps> = ({ name }) => {
       render={({ field: { name, onBlur, ref } }) => (
         <>
           <div>
-            <div>
-              <span>Choose profile photo</span>
+            <div className="flex flex-col">
+              <span className='font-semibold mt-3 text-lg mb-3'>Choose profile photo</span>
               <input
                 type="file"
-                className=""
+                className="block text-sm mb-2 text-green-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm 
+                    file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100"
                 name={name}
                 onBlur={onBlur}
                 ref={ref}

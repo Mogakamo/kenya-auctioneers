@@ -1,4 +1,4 @@
-export interface IUser {
+export default interface IBidder {
   name: string;
   email: string;
   role: string;
