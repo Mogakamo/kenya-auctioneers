@@ -1,4 +1,7 @@
-import { createBidderSchema } from "../../schema/bidder.schema";
+import {
+  createBidderSchema,
+  loginBidderSchema,
+} from "../../schema/bidder.schema";
 import { createRouter } from "./context";
 import * as trpc from "@trpc/server";
 import { PrismaClientKnownRequestError } from "@prisma/client/runtime";
@@ -37,8 +40,27 @@ export const BidderRouter = createRouter()
       }
     },
   })
-  .query("get-user", {
+  .mutation("login-bidder", {
+    input: loginBidderSchema,
+    async resolve({ ctx, input }) {
+      const { email, password } = input;
+      
+      const bidder = await ctx.prisma.bidder.findUnique({
+        where: {
+          email,
+        },
+      })
+
+      if (!bidder) {
+        throw new trpc.TRPCError({
+          code: "NOT_FOUND",
+          message: "User not found",
+        })
+      }
+    },
+  })
+  .query("get-bidder", {
     async resolve({ ctx }) {
-      return ctx.bidder;
+      // return ctx.bidder;
     },
   });

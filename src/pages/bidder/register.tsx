@@ -70,7 +70,7 @@ export default function Register() {
           <FileUpLoader name="photo" />
           <Loading
              loading={isLoading}
-            textColor="text-ct-blue-600"
+            textColor="text-white"
           >
             Sign Up
           </Loading>
@@ -78,7 +78,7 @@ export default function Register() {
         <span className="mt-2">
           Already have an account?{" "}
           <Link href="/bidder/login" className="text-green-600">
-            Login Here
+          <span className="text-green-600 cursor-pointer">Login here</span>
           </Link>
         </span>
       </FormProvider>
