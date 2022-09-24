@@ -24,3 +24,14 @@ model Bidder {
 
     @@map("bidders")
 }
+
+model Seller {
+    id String @id @default(cuid())
+    name String
+    email String @unique
+    password String
+    photo String
+    
+
+    @@map("sellers")
+}
