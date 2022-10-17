@@ -64,5 +64,7 @@ export const BidderRouter = createRouter()
     },
   })
   .query("bidder.me", {
-    async resolve({ ctx }) {},
+    async resolve({ ctx }) {
+      return ctx.bidder
+    },
   });

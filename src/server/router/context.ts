@@ -12,6 +12,17 @@ import superjson from "superjson"
  */
 type CreateContextOptions = Record<string, never>;
 
+interface CtxBidder {
+  id: string
+  email: string
+  name: string
+  username: string
+  image: string
+  iat: string
+  exp: number
+}
+
+
 /** Use this helper for:
  * - testing, where we dont have to Mock Next.js' req/res
  * - trpc's `createSSGHelpers` where we don't have req/res
@@ -43,9 +54,9 @@ export const createContext = async ({
   req: NextApiRequest;
   res: NextApiResponse;
 }) => {
-  // const bidder = getUserFromRequest(req)
+  const bidder = getBidderFromRequest(req)
 
-  return {req, res, prisma};
+  return {req, res, prisma, bidder};
 };
 
 

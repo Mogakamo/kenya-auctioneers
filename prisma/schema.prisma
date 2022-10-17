@@ -14,24 +14,43 @@ model Example {
     id String @id @default(cuid())
 }
 
-model Bidder {
-    id String @id @default(cuid())
-    name String
-    email String @unique
-    password String
-    photo String
-    
+model User {
+    id        String   @id @default(cuid())
+    name      String
+    email     String   @unique
+    password  String
+    img       String
+    verified  String   @default("false")
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    provider  String
+    role      Role     @default(bidder)
 
-    @@map("bidders")
+    bids Bid[]
+
+    @@map("users")
 }
 
-model Seller {
-    id String @id @default(cuid())
-    name String
-    email String @unique
-    password String
-    photo String
-    
+enum Role {
+    admin
+    bidder
+    seller
+    superadmin
+}
 
-    @@map("sellers")
+model Bid {
+    id        String @id @default(cuid())
+    price     Int
+    category  String
+    brand     String
+    img       String
+    bidStatus String @default("pending")
+    
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    BidOwner   User   @relation(fields: [BidOwnerId], references: [id])
+    BidOwnerId String
+
+    @@map("bids")
 }
