@@ -3,7 +3,7 @@ import { createRouter } from "./context";
 import superjson from "superjson";
 
 import { exampleRouter } from "./example";
-import { BidderRouter } from "./bidder.router";
+import { BidderRouter } from "./user.routes";
 
 export const appRouter = createRouter()
   .transformer(superjson)

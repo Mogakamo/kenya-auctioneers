@@ -9,7 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   CreateBidderInput,
   createBidderSchema,
-} from "../../schema/bidder.schema";
+} from "../../schema/user.schema";
 import { trpc } from "../../utils/trpc";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";

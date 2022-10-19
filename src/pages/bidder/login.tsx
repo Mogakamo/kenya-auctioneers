@@ -10,7 +10,7 @@ import Loading from "../../components/Reusables/Loaders/LoadingButton";
 import {
   LoginBidderInput,
   loginBidderSchema,
-} from "../../schema/bidder.schema";
+} from "../../schema/user.schema";
 import { trpc } from "../../utils/trpc";
 
 export default function Login() {

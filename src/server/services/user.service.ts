@@ -1,8 +1,10 @@
 import { Prisma, User } from "@prisma/client";
+import { signJwt } from "../../utils/jwt";
+import redisClient from "../../utils/redis";
 import customConfig from "../config";
 import { prisma } from "../db/client";
 
-export const user = async (input: Prisma.UserCreateInput) => {
+export const createUser = async (input: Prisma.UserCreateInput) => {
   return (await prisma.user.create({
     data: input,
   })) as User;

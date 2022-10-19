@@ -1,6 +1,6 @@
 import { object, z } from "zod";
 
-export const createBidderSchema = object({
+export const createUserSchema = object({
   name: z.string({ required_error: "Name is required" }),
   email: z
     .string({ required_error: "Email is required" })
@@ -16,7 +16,7 @@ export const createBidderSchema = object({
   message: "Passwords do not match",
 });
 
-export const loginBidderSchema = object({
+export const loginUserSchema = object({
   email: z
     .string({ required_error: "Email is required" })
     .email("Invalid email or password"),
@@ -25,5 +25,5 @@ export const loginBidderSchema = object({
     .min(8, "Invalid email or password"),
 });
 
-export type CreateBidderInput = z.TypeOf<typeof createBidderSchema>;
-export type LoginBidderInput = z.TypeOf<typeof loginBidderSchema>;
+export type CreateUserInput = z.TypeOf<typeof createUserSchema>;
+export type LoginUserInput = z.TypeOf<typeof loginUserSchema>;
