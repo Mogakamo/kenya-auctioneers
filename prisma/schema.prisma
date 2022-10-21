@@ -39,13 +39,17 @@ enum Role {
 }
 
 model Bid {
-    id        String @id @default(cuid())
-    price     Int
-    category  String
-    brand     String
-    img       String
-    bidStatus String @default("pending")
-    
+    id          String @id @default(cuid())
+    name        String
+    description String
+    price       Int
+    category    String
+    brand       String
+    img         String
+    bidStatus   String @default("pending")
+    bidStart    DateTime
+    bidEnd      DateTime
+
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 

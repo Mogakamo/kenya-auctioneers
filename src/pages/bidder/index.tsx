@@ -1,4 +1,4 @@
-import BidderLayout from "../../components/Layouts/BidderLayout";
+import BidderLayout from "../../components/Layouts/UserLayout";
 
 export default function Bidder() {
   return (
