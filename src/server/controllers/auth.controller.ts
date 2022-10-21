@@ -43,7 +43,7 @@ export const registerHandler = async ({
       email: input.email,
       password: hashedPassword,
       name: input.name,
-      img: input.photo,
+      img: input.img,
       provider: "local",
     });
 

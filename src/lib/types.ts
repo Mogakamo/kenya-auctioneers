@@ -1,11 +1,10 @@
-export default interface IBidder {
+export type IUser = {
+  _id: string;
+  id: string;
   name: string;
   email: string;
   role: string;
-  photo: string;
-  _id: string;
-  id: string;
+  img: string;
   createdAt: string;
   updatedAt: string;
-  __v: number;
 }

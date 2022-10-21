@@ -25,7 +25,7 @@ export default function NavBar() {
           <button className="flex space-x-2 items-center"><FunnelIcon className="h-8" /> <span>Filter</span></button>
           <button
             className="border-2 p-3 rounded-lg"
-            onClick={() => router.push("/auth")}
+            onClick={() => router.push("/auth/register")}
           >
             Get Started
           </button>
