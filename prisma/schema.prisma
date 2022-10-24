@@ -42,13 +42,13 @@ model Bid {
     id          String @id @default(cuid())
     name        String
     description String
-    price       Int
+    price       String
     category    String
     brand       String
     img         String
     bidStatus   String @default("pending")
-    bidStart    DateTime
-    bidEnd      DateTime
+    bidStart    String
+    bidEnd      String
 
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt

@@ -2,7 +2,9 @@ import { z } from "zod";
 
 export const addBidSchema = z.object({
   name: z.string().min(1, "Name must be greater than 0"),
-  price: z.number().min(1, "Bid price must be greater than 0"),
+  price: z.string().refine((val) => !Number.isNaN(parseInt(val, 10)), {
+    message: "Expected number, received a string",
+  }),
   description: z.string().min(1, "Description must be greater than 0"),
   category: z.string().min(1, "Category must be greater than 0"),
   brand: z.string().min(1, "Brand must be greater than 0"),
@@ -18,7 +20,9 @@ export const params = z.object({
 
 export const updateBidSchema = z.object({
   name: z.string().min(1, "Name must be greater than 0"),
-  price: z.number().min(1, "Bid price must be greater than 0"),
+  price: z.string().refine((val) => !Number.isNaN(parseInt(val, 10)), {
+    message: "Expected number, received a string",
+  }),
   description: z.string().min(1, "Description must be greater than 0"),
   category: z.string().min(1, "Category must be greater than 0"),
   brand: z.string().min(1, "Brand must be greater than 0"),
